@@ -1,0 +1,55 @@
+-
+  var contacts = {
+    "A": [{
+      name: "Алексей Примадонин",
+      status: "Онлайн",
+      avatar: "../../assets/images/avatar_3.jpg"
+    }],
+
+    "В": [{
+      name: "Вениамин Редакторович",
+      status: "Онлайн",
+      avatar: "../../assets/images/avatar_4.jpg"
+    }],
+
+    "Д": [{
+      name: "Джедай Падаванов",
+      status: "Был онлайн вчера",
+      avatar: "../../assets/images/avatar_2.jpg"
+    }],
+
+    "К": [{
+      name: "Кодовёнок Хекслетович",
+      status: "Был онлайн 3 часа назад",
+      avatar: "./../../assets/images/avatar_1.jpg"
+    },
+    {
+      name: "Королева Верстальщина",
+      status: "Была онлайн вчера",
+      avatar: "../../assets/images/avatar_5.jpg"
+    }],
+
+    "П": [{
+      name: "Питонист Джангович",
+      status: "Был онлайн вчера",
+      avatar: "../../assets/images/avatar_6.jpg"
+    }],
+  }
+
+.pt-5.px-3.sidebar-content
+  h2.fw-bold Контакты
+  form
+    input(type='text' class='form-control form-control-lg border border-top-0 border-end-0 border-start-0 custom-placeholder' placeholder='Поиск по контактам')
+  .row.mb-3
+    .contacts
+      each value, key in contacts
+        h2.fs-6.text-muted.contacts-alphabet= key
+
+        each contact in value
+          .contacts-contact.border-bottom.shadow-sm.costom-shadow
+            a(href='#')
+              .contact-avatar
+                img(src=contact.avatar, alt='avatar' class='rounded-circle')
+              .contact-text
+                h4.fs-6.fw-bold.text-dark.p-0.m-0= contact.name
+                p.contact-status.text-secondary.p-0.m-0= contact.status

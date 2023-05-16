@@ -1,4 +1,4 @@
 /node_modules/
+Makefile
 package-lock.json
-
-LICENCE.txt
+package.json

@@ -1,0 +1,20 @@
+mixin svg-icon(name, width = '24', height = '24', fill = 'currentColor')
+  svg(class='icon', width=width, height=height)
+    use(xlink:href=`assets/sprite.svg#${name}`)
+    style.
+      .icon {
+        fill: #{fill};
+      }
+
+.row.align-items-center.sidebar-header
+  .col.bg-primary.d-flex.justify-content-around.align-items-center.bg-primary.p-3.pe-4.rounded-top-left.text-light
+    +svg-icon('icons--logo', '14', '25', '#ffffff')
+    .div.d-flex.align-items-center.p-2.pt-2.pb-2.ps-3
+      +svg-icon('icons--people', '25', '25', '#ffffff')
+      span.ps-2.align-items-center.fs-14 Контакты
+    .div.d-flex.align-items-center
+      +svg-icon('icons--chat', '25', '25', '#ffffff')
+      span.ps-2.align-items-center.fs-14 Сообщения
+    .div.d-flex.align-items-center
+      +svg-icon('icons--person', '25', '25', '#ffffff')
+      span.ps-2.align-items-center.fs-14 Профиль

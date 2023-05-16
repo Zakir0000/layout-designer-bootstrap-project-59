@@ -1,0 +1,42 @@
+@import 'custom';
+@import './mixins/mixins';
+@import 'contacts';
+@import './utilities/_utilities';
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+html, 
+body {
+  height: 100%;
+}
+
+.bg-custom {
+  background-color:#e5e5e5;
+}
+
+.rounded-top-left {
+  @include border-radius(10px 0 0 0);
+}
+
+.rounded-bottom {
+  @include border-radius(10px 10px 10px 10px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1600px) {
+  /* styles for xxl breakpoint */
+  .container-xxl {
+    max-width: 1540px;
+  }
+}

@@ -9,10 +9,18 @@
     "bootstrap": "^5.2.3",
     "browser-sync": "^2.29.1",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-avif": "^1.1.1",
+    "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-newer": "^1.4.0",
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
+    "gulp-surge": "^0.1.4",
     "gulp-svg-sprite": "^2.0.3",
-    "surge": "^0.23.1"
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.62.1"
   }
 }

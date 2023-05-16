@@ -1,0 +1,37 @@
+// _contacts.scss
+
+.contacts {
+  @include hide-scrollbar();
+
+  .contacts-alphabet {
+    margin-top: 3rem;
+    font-weight: bold;
+    color: #6c757d; /* Use the text-muted color */
+  }
+
+  .contacts-contact {
+    margin-bottom: 1rem;
+
+    a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        background-color: #f8f9fa; /* Set the hover background color */
+      }
+    }
+
+    .contact-avatar {
+      // Define the avatar styles, e.g., fixed size and border-radius
+    }
+
+    .contact-status {
+      font-size: 80%;
+    }
+
+    .contact-text {
+      padding: 1.5rem;
+    }
+  }
+}

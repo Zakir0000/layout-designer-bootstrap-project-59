@@ -1,0 +1,20 @@
+$theme-colors: (
+  gray: #efefef,
+  primary: #4545A5,
+  secondary: #6c757d,
+  success: #28a745,
+  info: #17a2bb,
+  warning: #ffc107,
+  danger: #dc3545,
+  light: #fbfbfb,
+  dark: #343a40
+);
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+$gray: #efefef;
+
+
+
+$border-radius-base: 1rem;
+$border-color: $gray;

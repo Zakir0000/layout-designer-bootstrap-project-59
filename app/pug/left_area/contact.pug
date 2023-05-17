@@ -39,7 +39,7 @@
 .pt-5.px-3.sidebar-content
   h2.fw-bold Контакты
   form
-    input(type='text' class='form-control form-control-lg border border-top-0 border-end-0 border-start-0 custom-placeholder' placeholder='Поиск по контактам')
+    input(type='text' class='form-control form-control-lg border border-top-0 border-end-0 border-start-0 border-bottom custom-placeholder' placeholder='Поиск по контактам')
   .row.mb-3
     .contacts
       each value, key in contacts
@@ -49,7 +49,7 @@
           .contacts-contact.border-bottom.shadow-sm.costom-shadow
             a(href='#')
               .contact-avatar
-                img(src=contact.avatar, alt='avatar' class='rounded-circle')
+                img(src=contact.avatar, alt='avatar' class='rounded-circle').ms-4
               .contact-text
-                h4.fs-6.fw-bold.text-dark.p-0.m-0= contact.name
-                p.contact-status.text-secondary.p-0.m-0= contact.status
+                h4.fs-6.fw-bold.text-dark.p-0.m-0.contact-name= contact.name
+                p.contact-status.text-secondary.p-0.m-0.contact-status= contact.status

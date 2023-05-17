@@ -6,17 +6,6 @@
   @include hide-scrollbar();
 }
 
-.sidebar {
-  position: relative;
-  height: 100%;
-  overflow-y: auto;
-
-  .sidebar-header {
-    position: sticky;
-    top:0;
-  }
-}
-
 aside {
   img {
     height: 50px;

@@ -7,10 +7,10 @@ html.h-100(lang="ru")
     title hexlet chat | Zakir Khunkaev
     link(rel='stylesheet', href='css/style.min.css')
   body.bg-custom.p-md-4.h-100
-    .container-xxl.h-100
-      .row.bg-white.rounded-bottom.h-100
-        aside.col-4.border-end.h-100.scrollable-component.sidebar
+    .container-xxl.rounded-md-4.h-100.overflow-hidden
+      .row.bg-white.h-100
+        aside.col-12.col-md-4.border-end.h-100.scrollable-component.sidebar.d-flex.flex-column
           include header/header.pug
           include left_area/contact.pug
-        main.col.image-center
+        main.col.image-center.d-none.d-md-flex.p-0
           include right_area/avatar_page.pug

@@ -21,14 +21,39 @@ body {
   @include border-radius(10px 10px 10px 10px);
 }
 
+.sidebar {
+  position: relative;
+  height: 100%;
+  overflow-y: auto;
+
+  .sidebar-header {
+    position: sticky;
+    bottom:0;
+  }
+}
+
+.ml-auto {
+  margin-left: auto !important;
+}
 
 
+@media (min-width: 767px) {
+  /* styles for xxl breakpoint */
+  .rounded-md-4 {
+    border-radius: var(--bs-border-radius-xl) !important;
+  }
 
-
-
-
-
-
+  .sidebar {
+    position: relative;
+    height: 100%;
+    overflow-y: auto;
+  
+    .sidebar-header {
+      position: sticky;
+      top:0;
+    }
+  }
+}
 
 
 

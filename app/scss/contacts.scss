@@ -18,8 +18,15 @@
       align-items: center;
 
       &:hover {
-        background-color: #f8f9fa; /* Set the hover background color */
+        background-color: #4545a5; /* Set the hover background color */
       }
+      &:hover .contact-name {
+        color: #fbfbfb !important;
+      }
+      &:hover .contact-status {
+        color: #efefef !important;
+      }
+
     }
 
     .contact-avatar {

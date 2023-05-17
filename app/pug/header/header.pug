@@ -6,15 +6,16 @@ mixin svg-icon(name, width = '24', height = '24', fill = 'currentColor')
         fill: #{fill};
       }
 
-.row.align-items-center.sidebar-header
-  .col.bg-primary.d-flex.justify-content-around.align-items-center.bg-primary.p-3.pe-4.rounded-top-left.text-light
+.row.align-items-center.sidebar-header.order-md-first.order-last
+  .col.bg-primary.d-flex.justify-content-around.align-items-center.bg-primary.p-3.pe-4.text-light
     +svg-icon('icons--logo', '14', '25', '#ffffff')
-    .div.d-flex.align-items-center.p-2.pt-2.pb-2.ps-3
-      +svg-icon('icons--people', '25', '25', '#ffffff')
-      span.ps-2.align-items-center.fs-14 Контакты
-    .div.d-flex.align-items-center
-      +svg-icon('icons--chat', '25', '25', '#ffffff')
-      span.ps-2.align-items-center.fs-14 Сообщения
-    .div.d-flex.align-items-center
-      +svg-icon('icons--person', '25', '25', '#ffffff')
-      span.ps-2.align-items-center.fs-14 Профиль
+    .d-flex.ml-auto
+      .d-flex.align-items-center.p-2.pt-2.pb-2.ps-3.px-3
+        +svg-icon('icons--people', '25', '25', '#ffffff')
+        a.px-3.ps-2.align-items-center.fs-14.d-none.d-md-flex.p-0.text-white.text-decoration-none Контакты
+      .d-flex.align-items-center.px-3
+        +svg-icon('icons--chat', '25', '25', '#ffffff')
+        a.px-3.ps-2.align-items-center.fs-14.d-none.d-md-flex.p-0.text-white.text-decoration-none Сообщения
+      .d-flex.align-items-center.px-3
+        +svg-icon('icons--person', '25', '25', '#ffffff')
+        a.px-3.ps-2.align-items-center.fs-14.d-none.d-md-flex.p-0.text-white.text-decoration-none Профиль

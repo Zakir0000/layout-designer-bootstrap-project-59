@@ -7,15 +7,20 @@ mixin svg-icon(name, width = '24', height = '24', fill = 'currentColor')
       }
 
 .row.align-items-center.sidebar-header.order-md-first.order-last
-  .col.bg-primary.d-flex.justify-content-around.align-items-center.bg-primary.p-3.pe-4.text-light
-    +svg-icon('icons--logo', '14', '25', '#ffffff')
-    .d-flex.ml-auto
-      .d-flex.align-items-center.p-2.pt-2.pb-2.ps-3.px-3
-        +svg-icon('icons--people', '25', '25', '#ffffff')
-        a.px-3.ps-2.align-items-center.fs-14.d-none.d-md-flex.p-0.text-white.text-decoration-none Контакты
-      .d-flex.align-items-center.px-3
-        +svg-icon('icons--chat', '25', '25', '#ffffff')
-        a.px-3.ps-2.align-items-center.fs-14.d-none.d-md-flex.p-0.text-white.text-decoration-none Сообщения
-      .d-flex.align-items-center.px-3
-        +svg-icon('icons--person', '25', '25', '#ffffff')
-        a.px-3.ps-2.align-items-center.fs-14.d-none.d-md-flex.p-0.text-white.text-decoration-none Профиль
+  .col.bg-primary.d-flex.justify-content-end.align-items-center.bg-primary.p-3.pe-4.text-light
+    a(href="index.html").me-auto
+      +svg-icon('icons--logo', '14', '25', '#ffffff')
+      nav.ms-auto 
+        ul(role="tablist").nav.nav-tabs.border-0
+          li(role="presentation").nav-item
+            a(id="contacts-tab" href="#contacts" data-bs-toggle="tab" data-bs-target="#contacts" role="tab" area-controls="contacts" aria-selected="false" tabindex="-1").nav-link.text-white.bg-primary.border-0
+              +svg-icon('icons--people', '25', '25', '#ffffff')
+              span.fs-14.ps-2.d-none.d-md-inline Контакты
+          li(role="presentation").nav-item
+            a(id="chats-tab" href="#chats" data-bs-toggle="tab" data-bs-target="#chats" role="tab" area-controls="chats" aria-selected="true").nav-link.text-white.bg-primary.border-0
+              +svg-icon('icons--chat', '25', '25', '#ffffff')
+              span.fs-14.ps-2.d-none.d-md-inline Сообщения
+          li(role="presentation").nav-item
+            a(id="profile-tab" href="#profile" data-bs-toggle="tab" data-bs-target="#profile" role="tab" aria-controls="profile" aria-selected="false" tabindex="-1").nav-link.text-white.bg-primary.border-0
+              +svg-icon('icons--person', '25', '25', '#ffffff')
+              span.fs-14.ps-2.d-none.d-md-inline Профиль

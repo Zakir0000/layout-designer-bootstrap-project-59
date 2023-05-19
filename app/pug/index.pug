@@ -1,3 +1,12 @@
+-
+  const url = "index"
+
+  const active = {
+    contacts: ["show active"],
+    chats: null
+  }
+
+
 doctype html
 html.h-100(lang="ru")
   head
@@ -11,6 +20,11 @@ html.h-100(lang="ru")
       .row.bg-white.h-100
         aside.col-sm-12.col-md-7.col-lg-6.col-xl-5.col-xxl-4.border-end.h-100.scrollable-component.sidebar.d-flex.flex-column
           include header/header.pug
-          include left_area/contact.pug
+          .tab-content.hide-scrollbar.h-100
+            .section.tab-pane.fade.pt-5.h-100.px-4#contacts(class= active.contacts role="tabpanel" aria-labelledly="contacts-tab" tabindex="0")
+              include left_area/contact.pug
+            .section.tab-pane.fade.pt-5.h-100.px-4#chats(class= active.chats role="tabpanel" aria-labelledby="chats-tab" tabindex="0")
+              include left_area/chats.pug
         main.col.image-center.d-none.d-md-flex.p-0
           include right_area/avatar_page.pug
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous")

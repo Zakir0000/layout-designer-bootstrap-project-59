@@ -1,17 +1,17 @@
 include ./data-base/chats-data.pug
 
-.pt-5.px-3.sidebar-content
-  h2.fw-bold.mb-4.text-900 Контакты
+.px-3.sidebar-content
+  h2.fw-bold.mb-4 Чаты
   form.mb-5
-    input(type='search' class='p-4 form-control border border-top-0 border-start-0 border-end-0 shadow-none  custom-placeholder' placeholder='Поиск по контактам')
+    input(type='search' class='p-4 form-control border border-top-0 border-start-0 border-end-0 shadow-none  custom-placeholder' placeholder='Поиск по чатам')
     .row.mb-3
-    .contacts
+    .contacts.mt-5
       each contact in chats
         .contacts-contact
           a.d-flex.align-items-center.text-decoration-none.shadow-sm.pe-4.mb-3.contacts-contact(href='#')
             img.ms-3.me-4.rounded-circle(src=contact.avatar, alt='avatar' class='rounded-circle' width='50' height='50')
             .py-4.pe-3.w-100.overflow-hidden
               .d-flex.justify-content-between
-                span.fs-6.fw-bold.text-900.text-dark.contact-name= contact.name
+                span.fs-6.fw-bold.text-dark.contact-name= contact.name
                 span.text-secondary.small.contact-status= contact.time 
               p.text-secondary.small.text-truncate.mb-0.contact-status= contact.message

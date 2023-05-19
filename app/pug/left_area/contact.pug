@@ -1,7 +1,7 @@
 include ./data-base/contacts-data.pug
 
-.pt-5.px-3.sidebar-content
-  h2.fw-bold.mb-4.text-900 Контакты
+.px-3.sidebar-content
+  h2.fw-bold.mb-4 Контакты
   form.mb-5
     input(type='search' class='p-4 form-control border border-top-0 border-start-0 border-end-0 shadow-none  custom-placeholder' placeholder='Поиск по контактам')
   .row.mb-3
@@ -13,7 +13,7 @@ include ./data-base/contacts-data.pug
           .contacts-contact.border-bottom.shadow-sm.costom-shadow
             a(href='#')
               .contact-avatar
-                img(src=contact.avatar, alt='avatar' class='rounded-circle').ms-4
+                img(src=contact.avatar, alt='avatar' class='rounded-circle' width="50" height="50").ms-4
               .contact-text
                 h4.fs-6.fw-bold.text-dark.p-0.m-0.contact-name= contact.name
                 p.contact-status.text-secondary.p-0.m-0.contact-status= contact.status

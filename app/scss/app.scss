@@ -1,8 +1,14 @@
-@import 'custom';
+@import './custom';
 @import './mixins/mixins';
-@import 'contacts';
-@import './utilities/_utilities';
+@import './contacts';
+
 @import '../../node_modules/bootstrap/scss/bootstrap';
+
+@import './utilities/_utilities';
+
+@import '../../node_modules/bootstrap-icons/font/bootstrap-icons';
+
+
 
 
 html, 

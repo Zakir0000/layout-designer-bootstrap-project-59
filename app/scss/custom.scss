@@ -55,9 +55,6 @@ body {
   margin-left: auto !important;
 }
 
-.max-width-75 {
-  max-width: 75%;
-}
 
 .width-and-height-50 {
   width: 50px;
@@ -67,6 +64,7 @@ body {
 .fs-14 {
   font-size: 14px;
 }
+
 
 .minimize {
   font-size: 0.875em;
@@ -98,8 +96,6 @@ body {
   align-items: center;
 }
 
-
-
 $theme-colors: (
   gray: #efefef,
   primary: #4545A5,
@@ -120,8 +116,6 @@ $border-radius-base: 1rem;
 $border-color: $gray;
 
 
-
-
 @media (min-width: 767px) {
   /* styles for xxl breakpoint */
   .rounded-md-4 {
@@ -138,6 +132,11 @@ $border-color: $gray;
       top:0;
     }
   }
+
+  .max-width-75 {
+    max-width: 75%;
+  }
+  
 }
 
 @media (min-width: 1600px) {

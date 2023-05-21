@@ -14,7 +14,7 @@ mixin svg-icon(name, width = '24', height = '24', fill = 'currentColor')
         ul(role="tablist").nav.nav-tabs.border-0
           if url === 'chat'
             li(role="presentation").nav-item
-            a(id="contacts-tab" href="#chat-left-text" data-bs-toggle="tab" data-bs-target="#chat-left-text" role="tab" area-controls="chat-left-text" aria-selected="false" tabindex="-1").nav-link.text-white.bg-primary.border-0.d-block.d-md-none
+            a(id="contacts-tab" href="#current-chat" data-bs-toggle="tab" data-bs-target="#current-chat" role="tab" area-controls="#current-chat" aria-selected="false" tabindex="-1").nav-link.text-white.bg-primary.border-0.d-block.d-md-none
               +svg-icon('icons--chat-left-text', '25', '25', '#ffffff')
           li(role="presentation").nav-item
             a(id="contacts-tab" href="#contacts" data-bs-toggle="tab" data-bs-target="#contacts" role="tab" area-controls="contacts" aria-selected="false" tabindex="-1").nav-link.text-white.bg-primary.border-0

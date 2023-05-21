@@ -49,7 +49,7 @@ function sprite() {
 }
 
 function compilePug() {
-  return src('app/pug/index.pug')
+  return src('app/pug/*.pug')
     .pipe(pug())
     .pipe(dest('app/'))
     .pipe(browserSync.stream())
@@ -81,7 +81,6 @@ function building(){
     'app/css/style.min.css',
     '!app/assets/**/*.html',
     'app/assets/**/*.*',
-    '!app/assets/**/*.svg',
     'app/assets/**/sprite.svg',
     'app/**/*.html',
   ], {base: 'app'})

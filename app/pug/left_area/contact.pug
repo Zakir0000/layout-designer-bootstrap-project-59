@@ -11,7 +11,7 @@ include ./data-base/contacts-data.pug
 
         each contact in value
           .contacts-contact.border-bottom.shadow-sm.costom-shadow
-            a(href='#')
+            a(href= contact.link)
               .contact-avatar
                 img(src=contact.avatar, alt='avatar' class='rounded-circle' width="50" height="50").ms-4
               .contact-text

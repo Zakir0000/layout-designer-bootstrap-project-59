@@ -17,9 +17,9 @@ html.h-100(lang="ru")
     link(rel='stylesheet', href='css/style.min.css')
 
   body.bg-custom.p-md-4.h-100
-    .bigbox-xxl-1540px.container-xxl.rounded-md-4.h-100.overflow-hidden
-      .row.bg-white.h-100
-        aside.col.col-md-7.col-lg-6.col-xl-5.col-xxl-4.border-end.h-100.scrollable-component.sidebar.d-flex.justify-content-end.flex-column.p-0
+    .bigbox-xxl-1540px.container-xxl.rounded-md-4.h-100.overflow-hidden.bg-white
+      .row.h-100
+        aside.p-0.col.col-md-7.col-lg-6.col-xl-5.col-xxl-4.border-end.h-100.scrollable-component.sidebar.d-flex.flex-column
           include header/header-chat.pug
           .tab-content.d-flex.flex-column.scrollable-component.h-100
             section.tab-pane.fade.pt-5.h-100#contacts(class= active.contacts role="tabpanel" aria-labelledly="contacts-tab" tabindex="0")

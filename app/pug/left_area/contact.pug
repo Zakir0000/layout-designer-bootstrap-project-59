@@ -7,7 +7,7 @@ include ./data-base/contacts-data.pug
   .row.mb-3
     .contacts
       each value, key in contacts
-        h2.fs-6.text-muted.contacts-alphabet= key
+        h2.mt-5.mb-3.fs-6.text-muted.contacts-alphabet= key
 
         each contact in value
           .contacts-contact.border-bottom.shadow-sm.costom-shadow

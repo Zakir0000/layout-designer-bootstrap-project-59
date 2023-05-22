@@ -1,0 +1,16 @@
+.header-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+}
+
+
+
+@media (max-width: 700px) {
+  .form-sticky {
+    position: sticky;
+    bottom: 73px;
+    background: white;
+  }
+}

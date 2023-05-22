@@ -21,23 +21,22 @@ html.h-100(lang="ru")
       .row.bg-white.h-100
         aside.col.col-md-7.col-lg-6.col-xl-5.col-xxl-4.border-end.h-100.scrollable-component.sidebar.d-flex.justify-content-end.flex-column.p-0
           include header/header-chat.pug
-          .tab-content.d-md-flex.flex-column.scrollable-component.h-100
+          .tab-content.d-flex.flex-column.scrollable-component.h-100
             section.tab-pane.fade.pt-5.h-100#contacts(class= active.contacts role="tabpanel" aria-labelledly="contacts-tab" tabindex="0")
               include left_area/contact.pug
             section.tab-pane.fade.pt-5.h-100#chats(class= active.chats role="tabpanel" aria-labelledby="chats-tab" tabindex="0")
               include left_area/chats.pug
             section.tab-pane.fade.pt-5.h-100#profile(class= active.profile role="tabpanel" aria-labelledby="profile-tab" tabindex="0")
               include left_area/profile.pug
-            main.col.d-md-none.flex-column.h-100.p-0#current-chat
-              header.d-flex.align-items-center.border-bottom.me-dm-4
+            main.tab-pane.fade.d-flex.d-md-none.flex-column.h-100.p-0#current-chat(class= active.profile role="tabpanel" aria-label="profile-tab" tabindex="0")
+              header.d-flex.align-items-center.border-bottom.me-dm-4.header-sticky
                 img.ms-3.me-4.rounded-circle(src="./assets/images/avatar_4.jpg" alt="avatar_4" width="50" height="50")
                 .py-4
                   p.fw-bold.text-dark.mb-0 Вениамин Редакторович
                   p.small.mb-0.text-secondary Онлайн
               include right_area/desktop-chat.pug
-            
-        main.col.d-none.d-md-flex.flex-column.p-0.h-100#current-chat
-          header.d-flex.align-items-center.border-bottom.me-dm-4
+        main.col.d-none.d-md-flex.flex-column.p-0.h-100#current-chat(class= active.profile role="tabpanel" aria-label="profile-tab" tabindex="0")
+          header.d-flex.align-items-center.border-bottom.me-dm-4.header-sticky
             img.ms-3.me-4.rounded-circle(src="./assets/images/avatar_4.jpg" alt="avatar_4" width="50" height="50")
             .py-4
               p.fw-bold.text-dark.mb-0 Вениамин Редакторович

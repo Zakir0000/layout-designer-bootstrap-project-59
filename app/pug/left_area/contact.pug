@@ -7,13 +7,13 @@ include ./data-base/contacts-data.pug
   .mb-3.px-2
     .contacts
       each value, key in contacts
-        h2.mt-5.mb-4.fs-6.text-muted.contacts-alphabet= key
+        h2.mt-5.mb-4.fs-6.text-muted.contacts-alphabet.fw-light= key
 
         each contact in value
-          .contacts-contact.border-bottom.shadow-sm.costom-shadow.mb-4
+          .contacts-contact.border-bottom.shadow-sm.costom-shadow.mb-4.border-start.border-end
             a(href= contact.link)
               .contact-avatar
-                img(src=contact.avatar, alt='avatar' class='rounded-circle' width="50" height="50").ms-4
+                img(src=contact.avatar, alt='avatar' class='rounded-circle' width="50" height="50").ms-3
               .contact-text
                 h4.fs-6.fw-bold.text-dark.p-0.m-0.contact-name= contact.name
                 p.contact-status.text-secondary.p-0.m-0.contact-status= contact.status

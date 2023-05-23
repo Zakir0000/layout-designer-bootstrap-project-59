@@ -4,7 +4,7 @@ include ./data-base/contacts-data.pug
   h2.fw-bold.mb-4 Контакты
   form.mb-4
     input(type='search' class='p-4 form-control border border-top-0 border-start-0 border-end-0 shadow-none  custom-placeholder' placeholder='Поиск по контактам')
-  .row.mb-3
+  .mb-3.px-2
     .contacts
       each value, key in contacts
         h2.mt-5.mb-3.fs-6.text-muted.contacts-alphabet= key

@@ -10,7 +10,7 @@ include ./data-base/contacts-data.pug
         h2.mt-5.mb-3.fs-6.text-muted.contacts-alphabet= key
 
         each contact in value
-          .contacts-contact.border-bottom.shadow-sm.costom-shadow
+          .contacts-contact.border-bottom.shadow-sm.costom-shadow.mb-3
             a(href= contact.link)
               .contact-avatar
                 img(src=contact.avatar, alt='avatar' class='rounded-circle' width="50" height="50").ms-4

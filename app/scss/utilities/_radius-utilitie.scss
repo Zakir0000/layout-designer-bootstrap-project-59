@@ -1,7 +1,7 @@
 $utilities: map.merge(
   $utilities,
   (
-    'radius-left-top': (
+    "radius-left-top": (
       property: border-top-left-radius,
       class: radius-left-top,
       responsive: true,
@@ -9,7 +9,7 @@ $utilities: map.merge(
         null: 1rem,
       ),
     ),
-    'radius': (
+    "radius": (
       property: border-radius,
       class: radius,
       responsive: true,
@@ -17,7 +17,7 @@ $utilities: map.merge(
         null: 1rem,
       ),
     ),
-    'radius-left': (
+    "radius-left": (
       property: border-top-left-radius border-bottom-left-radius,
       class: radius-left,
       responsive: true,
@@ -25,7 +25,7 @@ $utilities: map.merge(
         null: 1rem,
       ),
     ),
-    'radius-right': (
+    "radius-right": (
       property: border-top-right-radius border-bottom-right-radius,
       class: radius-right,
       responsive: true,

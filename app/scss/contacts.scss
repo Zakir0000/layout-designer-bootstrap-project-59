@@ -9,32 +9,28 @@
     color: #6c757d; /* Use the text-muted color */
   }
 
-  .contacts-contact {
-    margin-bottom: 1rem;
+  .hover-effect {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 
-    a {
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-
-      &:hover {
-        background-color: #4545a5; /* Set the hover background color */
-      }
-      &:hover .contact-name {
-        color: #fbfbfb !important;
-      }
-      &:hover .contact-status {
-        color: #efefef !important;
-      }
+    &:hover {
+      background-color: #4545a5; /* Set the hover background color */
     }
-
-    .contact-status {
-      font-size: 14px;
+    &:hover .contact-name {
+      color: #fbfbfb !important;
     }
-
-    .contact-text {
-      padding: 1.5rem;
+    &:hover .contact-status {
+      color: #efefef !important;
     }
+  }
+
+  .contact-status {
+    font-size: 14px;
+  }
+
+  .contact-text {
+    padding: 1.5rem;
   }
 
   .mt-50 {

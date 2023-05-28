@@ -7,16 +7,16 @@ mixin svg-icon(name, width = '24', height = '24', fill = 'currentColor')
       }
 
 header.d-flex.align-items-center.order-1.order-md-0.sticky-bottom.px-3.py-3.bg-primary
-  .ps-1
+  a(href="index.html").ps-1
     +svg-icon('icons--logo', '14', '25', '#fbfbfb')
   nav.ms-auto
     ul(role="tablist").nav.nav-tabs.border-0
       if url === 'chat'
         li(role="presentation").nav-item
-          a(id="contacts-tab" href="#current-chat" data-bs-toggle="tab" data-bs-target="#current-chat" role="tab" aria-selected="false" tabindex="-1").nav-link.text-white.bg-primary.border-0.d-block.d-md-none.me-2
+          a(id="contacts-tab" href="#current-chat" data-bs-toggle="tab" data-bs-target="#current-chat" role="tab" aria-selected="false").nav-link.text-white.bg-primary.border-0.d-block.d-md-none.me-2
             +svg-icon('icons--chat-left-text', '25', '25', '#fbfbfb')
       li(role="presentation").nav-item
-        a(id="contacts-tab" href="#contacts" data-bs-toggle="tab" data-bs-target="#contacts" role="tab" aria-selected="false" tabindex="-1").nav-link.text-white.bg-primary.border-0.me-2
+        a(id="contacts-tab" href="#contacts" data-bs-toggle="tab" data-bs-target="#contacts" role="tab" aria-selected="false").nav-link.text-white.bg-primary.border-0.me-2
           +svg-icon('icons--people', '25', '25', '#fbfbfb')
           span.fs-14.ps-2.d-none.d-md-inline Контакты
       li(role="presentation").nav-item
@@ -24,6 +24,6 @@ header.d-flex.align-items-center.order-1.order-md-0.sticky-bottom.px-3.py-3.bg-p
           +svg-icon('icons--chat', '25', '25', '#fbfbfb')
           span.fs-14.ps-2.d-none.d-md-inline Сообщения
       li(role="presentation").nav-item
-        a(id="profile-tab" href="#profile" data-bs-toggle="tab" data-bs-target="#profile" role="tab" aria-controls="profile" aria-selected="false" tabindex="-1").nav-link.text-white.bg-primary.border-0.me-2
+        a(id="profile-tab" href="#profile" data-bs-toggle="tab" data-bs-target="#profile" role="tab" aria-controls="profile" aria-selected="false").nav-link.text-white.bg-primary.border-0.me-2
           +svg-icon('icons--person', '25', '25', '#fbfbfb')
           span.fs-14.ps-2.d-none.d-md-inline Профиль

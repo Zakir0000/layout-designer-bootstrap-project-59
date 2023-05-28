@@ -10,9 +10,8 @@ include ./data-base/contacts-data.pug
 
       each contact in value
         .contacts-contact.border-bottom.shadow-sm.costom-shadow.mb-4.border-start.border-end
-          a(href= contact.link)
-            div
-              img(src=contact.avatar, alt='avatar' class='rounded-circle' width="50" height="50").ms-3
+          a(href= contact.link).d-flex
+            img(src=contact.avatar, alt='avatar' class='rounded-circle' width="50" height="50").ms-3
             .contact-text
               h4.fs-6.fw-bold.text-dark.p-0.m-0.contact-name= contact.name
               p.contact-status.text-secondary.p-0.m-0.contact-status= contact.status

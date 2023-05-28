@@ -28,6 +28,12 @@ body {
   height: 100%;
 }
 
+.text-hidden {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .bg-custom {
   background-color:#efefef;
 }

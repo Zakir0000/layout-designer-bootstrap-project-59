@@ -1,14 +1,13 @@
 include ./data-base/chats-data.pug
-
-h2.fw-bold.mb-4 Чаты
-form
-  input(type='search' class='p-4 form-control border border-top-0 border-start-0 border-end-0 shadow-none  custom-placeholder' placeholder='Поиск по сообщениям')
-.row.mb-3.contacts.mt-5.px-3
-  each contact in chats
-    a.d-flex.shadow-sm.mb-3.hover-effect(href='chat.html')
-      img.ms-3.me-4.rounded-circle(src=contact.avatar, alt='avatar' class='rounded-circle' width='50' height='50')
-      .py-4.pe-3.w-100.overflow-hidden.text-hidden
-        .d-flex.justify-content-between
-          span.fw-bold.text-dark.contact-name= contact.name
-          span.text-secondary.small= contact.time 
-        p.text-secondary.small.text-truncate.mb-0= contact.message
+.px-4.contacts.mb-3
+  h2.fw-bold.mb-4 Чаты
+  form
+    input(type='search' class='p-4 form-control border border-top-0 border-start-0 border-end-0 shadow-none  custom-placeholder mb-5' placeholder='Поиск по сообщениям')
+    each contact in chats
+      a.d-flex.shadow-sm.mb-3.hover-effect(href='chat.html')
+        img.ms-3.me-4.rounded-circle(src=contact.avatar, alt='avatar' class='rounded-circle' width='50' height='50')
+        .py-4.pe-3.w-100.overflow-hidden.text-hidden
+          .d-flex.justify-content-between
+            span.fw-bold.text-dark.contact-name= contact.name
+            span.text-secondary.small= contact.time 
+          p.text-secondary.small.text-truncate.mb-0= contact.message

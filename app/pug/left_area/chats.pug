@@ -6,7 +6,7 @@ include ./data-base/chats-data.pug
     each contact in chats
       a.d-flex.shadow-sm.mb-3.hover-effect(href='chat.html')
         img.ms-3.me-4.rounded-circle(src=contact.avatar, alt='avatar' class='rounded-circle' width='50' height='50')
-        .py-4.pe-3.w-100.overflow-hidden.text-hidden
+        .py-4.w-100.overflow-hidden.text-hidden.pe-40
           .d-flex.justify-content-between
             span.fw-bold.text-dark.contact-name= contact.name
             span.text-secondary.small= contact.time 

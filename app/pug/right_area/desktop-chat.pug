@@ -1,10 +1,3 @@
-mixin svg-icon(name, width = '24', height = '24', fill = 'currentColor')
-  svg(width=width, height=height)
-    use(xlink:href=`assets/sprite.svg#${name}`)
-    style.
-      use {
-        fill: #{fill};
-      }
 
 .d-flex.flex-column.gap-3.px-5.pt-5.scrollable-component
   .max-width-75.d-flex

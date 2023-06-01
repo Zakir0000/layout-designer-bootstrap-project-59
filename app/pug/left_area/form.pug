@@ -1,6 +1,14 @@
+mixin svg-icon(name, width = '24', height = '24', fill = 'currentColor')
+  svg(width=width, height=height)
+    use(xlink:href=`assets/sprite.svg#${name}`)
+    style.
+      use {
+        fill: #{fill};
+        vertical-align: -0.125em;
+      }
+
 form.border-top.mx-md-5.mt-auto(role="search" action="#" method="post")
   .input-group.ps-2.pe-md-2.py-md-1
     input.form-control.border-0.shadow-none.ps-4.ps-md-3.pe-0.py-0(type="search" placeholder="Напишите сообщение..." aria-label="Поиск")
     button.btn.btn-primary.rounded-circle.border-0.p-0.m-3.width-and-height-50(type="submit")
-      span.fs-4.text-white.icon-22
-        +svg-icon('icons--cursor', '22', '22', '#fbfbfb')
+      +svg-icon('icons--cursor', '22', '22', '#fbfbfb')

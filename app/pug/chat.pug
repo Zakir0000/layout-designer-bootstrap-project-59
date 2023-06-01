@@ -23,19 +23,21 @@ html.h-100(lang="ru")
               include left_area/chats.pug
             section.tab-pane.fade.pt-5.h-100#profile(class= active.profile role="tabpanel" aria-labelledby="profile-tab" tabindex="0")
               include left_area/profile.pug
-            main.tab-pane.fade.d-md-none.flex-column.h-100.p-0.scrollable-component#current-chat(role="tabpanel" aria-label="profile-tab" tabindex="0")
+            main.tab-pane.fade.d-md-none.flex-column.h-100.p-0.scrollable-component.d-flex#current-chat(role="tabpanel" aria-label="profile-tab" tabindex="0")
               header.d-flex.align-items-center.border-bottom.header-sticky
                 img.ms-3.me-4.rounded-circle(src="./assets/images/avatar_4.jpg" alt="avatar_4" width="50" height="50")
                 .py-4
                   p.fw-bold.text-dark.mb-0 Вениамин Редакторович
                   p.small.mb-0.text-secondary Онлайн
               include right_area/desktop-chat.pug
-        main.col.d-none.d-md-flex.flex-column.p-0.h-100(class= active.profile role="tabpanel" aria-label="profile-tab" tabindex="0")
+              include left_area/form.pug
+        main.col.d-none.d-md-flex.flex-column.p-0.h-100.scrollable-component(class= active.profile role="tabpanel" aria-label="profile-tab" tabindex="0")
           header.d-flex.align-items-center.border-bottom.me-dm-4.header-sticky
             img.ms-3.me-4.rounded-circle(src="./assets/images/avatar_4.jpg" alt="avatar_4" width="50" height="50")
             .py-4
               p.fw-bold.text-dark.mb-0 Вениамин Редакторович
               p.small.mb-0.text-secondary Онлайн
           include right_area/desktop-chat.pug
+          include left_area/form.pug
 
     script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous")

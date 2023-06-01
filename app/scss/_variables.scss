@@ -11,3 +11,13 @@ $theme-gray: #efefef;
 $custom-colors: (
   "theme-gray": $theme-gray,
 );
+
+$border-color: theme-color("theme-gray");
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+)

@@ -1,7 +1,7 @@
 // _contacts.scss
 
 .contacts {
-  @include hide-scrollbar();
+  @include hide-scrollbar;
 
   .contacts-alphabet {
     margin-top: 2rem;
@@ -17,9 +17,11 @@
     &:hover {
       background-color: #4545a5; /* Set the hover background color */
     }
+
     &:hover .contact-name {
       color: #fbfbfb !important;
     }
+    
     &:hover .text-secondary {
       color: #efefef !important;
     }

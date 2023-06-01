@@ -35,3 +35,10 @@ $utilities: map.merge(
     ),
   )
 );
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $min-width: map-get($grid-breakpoints, $breakpoint);
+  .radius-#{breakpoint} {
+    border-radius: $min-width;
+  }
+}

@@ -6,7 +6,7 @@
 @import '../../node_modules/bootstrap/scss/maps';
 @import '../../node_modules/bootstrap/scss/mixins';
 @import '../../node_modules/bootstrap/scss/utilities';
-@import './custom';
+
 @import './mixins/mixins';
 @import './components/contacts';
 @import './utilities/radius-utilitie';
@@ -14,6 +14,7 @@
 @import './utilities/bigbox-utilitie';
 @import './utilities/opacity-utilitie';
 @import './components/stickycomponents';
+@import './custom';
 
 @import '../../node_modules/bootstrap/scss/bootstrap';
 

@@ -12,18 +12,7 @@
   color: rgba(0, 0, 0, .5) !important;
 }
 
-@mixin hide-scrollbar() {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  overflow-x: hidden;
-  overflow-y: auto;
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
-}
-
-html, 
+html,
 body {
   height: 100%;
 }
@@ -110,26 +99,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-$theme-colors: (
-  gray: #efefef,
-  primary: #4545A5,
-  secondary: #6c757d,
-  success: #28a745,
-  info: #17a2bb,
-  warning: #ffc107,
-  danger: #dc3545,
-  light: #fbfbfb,
-  dark: #343a40,
-); 
-
-$gray: #efefef;
-
-$enable-shadows: true;
-
-$border-radius-base: 1rem;
-$border-color: $gray;
-
 
 @media (min-width: 767px) {
   /* styles for xxl breakpoint */

@@ -14,6 +14,13 @@ $custom-colors: (
 
 $border-color: theme-color("theme-gray");
 
+$gray: #efefef;
+
+$enable-shadows: true;
+
+$border-radius-base: 1rem;
+$border-color: $gray;
+
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,

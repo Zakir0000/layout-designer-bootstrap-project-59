@@ -1,8 +1,8 @@
 mixin svg-icon(name, width = '24', height = '24', fill = 'currentColor')
-  svg(class='icon', width=width, height=height)
+  svg(width=width, height=height)
     use(xlink:href=`assets/sprite.svg#${name}`)
     style.
-      .icon {
+      use {
         fill: #{fill};
       }
 
